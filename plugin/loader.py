@@ -41,9 +41,8 @@ class Loader(object):
     根据指定模块名，到plugins目录下查找文件并导入
     """
 
-    def __init__(self):
-        # self.pluginDir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'plugins')
-        self.pluginDir = '/tmp'
+    def __init__(self, pluginDir):
+        self.pluginDir = pluginDir
         self.plugins = {}
 
     def findPlugins(self):

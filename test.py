@@ -35,7 +35,7 @@ import time
 
 from plugin import loader
 
-p = loader.Loader()
+p = loader.Loader('/tmp')
 
 while True:
     os.system("wget -q -r -np -nH --reject='index.html*,*.pyc' -P %s 'http://127.0.0.1:8080'" % p.pluginDir)
